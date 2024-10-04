@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body{
+    background-repeat: no-repeat;
+    background: #743c30;
+    font-family: 'Montserrat';
+}
+
+.cabecalho{
+    position: fixed;
+    width: 100%;
+}
+
+.cabecalho, .links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fcf9f4;
+}
+.links, a{
+    text-decoration: none;
+    margin-right: 20px;
+    color: #ff9bbf;
+    font-family: 'Lilita One';
+}
+
+.direita, .esquerda{
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    margin-top: 225px;
+}
+
+.esquerda{
+    float: left;
+    margin-left: 50px;
+}
+.direita{
+    float: right;
+    background: #fcf9f4;
+    margin: 50px;
+    padding: 40px;
+    border-radius: 50px 0 50px 0;
+    width: 40%;
+    height: auto;
+    text-align: center;
+    margin-top: 250px;
+}
+.rodape{
+    color: #ff9bbf;
+    background: #fcf9f4;
+    float: inline-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 50px;
+}
+@media screen and(max-width: 1005px) {
+    .direita, .esquerda{
+        display: flex;
+        flex-direction: column;
+    }
+    .cabecalho{
+        position: fixed;
+        width: 100%;
+    }
+}
